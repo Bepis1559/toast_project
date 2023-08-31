@@ -74,7 +74,7 @@ export function Toasts(): ReactElement {
                   minWidth: "0",
                 }}
                 onClick={() => {
-                  toast.dismiss();
+                  toast.dismiss(id);
                   remove(id);
                 }}>
                 <DeleteIcon sx={{ margin: "0", padding: "0" }} />
