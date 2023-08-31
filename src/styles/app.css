@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+input,
+textarea,
+button,
+select {
+  font: inherit;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+body {
+  /* min-height: 100dvb; */
+  background: #222b33;
+}
+
+/* =============================== */
+
+.container {
+  margin-inline: auto;
+  margin-block-start: 2em;
+  color: white;
+  width: min(85%, 35em);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(1rem, 1rem + 0.35vw, 1rem + 0.55vw);
+  padding: 0.5em 1em;
+  text-align: center;
+}
+
+.autoDismissTimeout {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2em;
+}
+.container h1 {
+  font-size: clamp(1rem + 0.5vw, 1rem + 1vw, 1rem + 1.5vw);
+}
+.toastForm > * {
+  margin-block-start: 2em;
+}
+.toastForm button[type="submit"] {
+  margin-block-start: 3em;
+}
+
+.toastForm {
+  text-align: start;
+}
